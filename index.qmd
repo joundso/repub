@@ -1,0 +1,15 @@
+# Manuscript {.unnumbered}
+
+```{r}
+#| include: false
+
+library(magrittr)
+```
+
+
+{{< include qmd/00_abstract.qmd >}}
+{{< include qmd/01_introduction.qmd >}}
+{{< include qmd/02_methods.qmd >}}
+{{< include qmd/03_results.qmd >}}
+{{< include qmd/04_discussion.qmd >}}
+{{< include qmd/09_references.qmd >}}

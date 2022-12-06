@@ -8,9 +8,9 @@
 !/NEWS.md
 !/README.md
 !/_quarto.yml
-!/Notes.txt
+!/index.qmd
 !/repub.Rproj
-!/.RProfile
+# !/.RProfile
 
 
 ## and also NOT ignore these folders (but ignore all of its content and only whitelist some files:):
@@ -34,6 +34,12 @@
 !/docker/build_image.sh
 !/docker/.env
 
+!/meta/
+/meta/*
+!/meta/ios-press-books.csl
+!/meta/references.bib
+!/meta/README.md
+
 !/qmd/
 /qmd/*
 !/qmd/*.qmd
@@ -42,3 +48,5 @@
 /R/*
 !/R/*.R
 
+
+/.quarto/
