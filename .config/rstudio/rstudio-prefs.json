@@ -1,0 +1,12 @@
+{
+    "initial_working_directory": "~",
+    "continue_comments_on_newline": true,
+    "show_indent_guides": true,
+    "rainbow_parentheses": true,
+    "auto_append_newline": true,
+    "strip_trailing_whitespace": true,
+    "warn_variable_defined_but_not_used": true,
+    "posix_terminal_shell": "bash",
+    "jobs_tab_visibility": "shown",
+    "editor_theme": "Cobalt"
+}
