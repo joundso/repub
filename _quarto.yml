@@ -1,0 +1,53 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Reproducible Publications"
+
+  # https://quarto.org/docs/journals/authors.html#author-metadata
+  author:
+    - name: Jonathan M. Mang
+      orcid: 0000-0003-0518-4710
+      corresponding: true
+      affiliations:
+        - id: diz
+          name: Medical Center for Information and Communication Technology, Universitätsklinikum Erlangen, Erlangen, Germany.
+    - name: Lorenz A. Kapsner
+      orcid: 0000-0003-1866-860X
+      affiliations:
+        - ref: diz
+        - id: dr
+          name: Institute of Radiology, Universitätsklinikum Erlangen, Friedrich-Alexander-University Erlangen-Nürnberg (FAU), Erlangen, Germany.
+
+  chapters:
+    - index.qmd
+
+bibliography: meta/references.bib
+csl: meta/ios-press-books.csl
+
+format:
+ pdf:
+  toc: true
+  latex-engine: xelatex
+ docx:
+  toc: true
+
+
+## https://quarto.org/docs/reference/formats/opml.html#execution
+execute:
+  echo: false
+  message: false
+  warning: false
+  include: false
+  error: true
+
+
+## https://quarto.org/docs/authoring/cross-references.html#titles
+crossref:
+  fig-title: Figure     # (default is "Figure")
+  tbl-title: Table      # (default is "Table")
+  # title-delim: —      # (default is ":")
+  fig-prefix: Figure    # (default is "Figure")
+  tbl-prefix: Table     # (default is "Table")
+  ref-hyperlink: true   # (default is true)
