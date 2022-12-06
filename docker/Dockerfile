@@ -3,7 +3,7 @@ FROM rocker/rstudio:4.2.2
 ## In all rocker-images there is this magic folder with lots of predefined scripts for installing stuff
 ## like `shiny`, `quarto`, `python` including all necessarry system libraries:
 ## https://github.com/rocker-org/rocker-versioned2/tree/master/scripts
-# RUN /rocker_scripts/install_shiny_server.sh
+RUN /rocker_scripts/install_texlive.sh
 
 ## In rstudio, this is already installed:
 ## (Source: https://github.com/rocker-org/rocker-versioned2/blob/master/dockerfiles/rstudio_4.2.2.Dockerfile)
