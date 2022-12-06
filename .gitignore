@@ -1,0 +1,44 @@
+## Ignore everything:
+/*
+/*/
+
+## ... but don't ignore these files:
+!/.gitignore
+!/LICENSE
+!/NEWS.md
+!/README.md
+!/_quarto.yml
+!/Notes.txt
+!/repub.Rproj
+!/.RProfile
+
+
+## and also NOT ignore these folders (but ignore all of its content and only whitelist some files:):
+!/.config/
+/config/*
+!/config/rstudio-prefs.json
+
+!/.github/
+/.github/*
+!/.github/dependabot.yml
+
+!/data/
+/data/*
+!/data/data1.csv
+
+!/docker/
+/docker/*
+!/docker/docker-compose.y[a]ml
+!/docker/Dockerfile
+!/docker/README.md
+!/docker/build_image.sh
+!/docker/.env
+
+!/qmd/
+/qmd/*
+!/qmd/*.qmd
+
+!/R/
+/R/*
+!/R/*.R
+
