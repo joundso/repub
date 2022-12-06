@@ -35,6 +35,11 @@
 !/docker/build_image.sh
 !/docker/.env
 
+!/docs/
+/docs/*
+!/docs/Reproducible-Publications.docx
+!/docs/Reproducible-Publications.pdf
+
 !/meta/
 /meta/*
 !/meta/ios-press-books.csl

@@ -27,9 +27,9 @@ bibliography: meta/references.bib
 csl: meta/ios-press-books.csl
 
 format:
- pdf:
-  toc: true
-  latex-engine: xelatex
+#  pdf:
+#   toc: true
+#   latex-engine: xelatex
  docx:
   toc: true
 
