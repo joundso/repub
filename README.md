@@ -21,8 +21,11 @@ It should be directly usable without customization, but also provide help to be 
     docker-compose up -d
     ```
 
-3. Open RStudio in your browser at [`http://127.0.0.1:8080/`](http://127.0.0.1:8080/) and open the project `repub.Rproj` in the lower right corner.
-4. Build the manuscript using the `Render Book` Button in the upper right sub-window
+3. Open RStudio in your browser at [`http://127.0.0.1:8080/`](http://127.0.0.1:8080/)
+   1. Login with the username `rstudio` and password `pwd`
+   2. Open the project `repub.Rproj` in the lower right corner of the file browser
+4. Build the manuscript in the upper right part of RStudio: `Build` tab --> `Render Book` button
+5. See the result in the included viewer or the file in the [`docs`](./docs/) folder
 
 ## Questions?
 
