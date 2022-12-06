@@ -1,0 +1,18 @@
+version: "3.9" # optional since v1.27.0
+services:
+  rstudio:
+    ## If an image is specified here, this will be pulled from a harbor.
+    ## If the `build` argument is also set, the image is built
+    ## (using the Dockerfile specified after `build`) and this local (!) image
+    ## is then named after the name specified behind `image`:
+    image: ${REGISTRY_PREFIX}/${IMAGE_NAME}:${IMAGE_VERSION_TAG}
+    # image: joundso/rstudio:4.2.2-9003
+    # build: .
+    restart: unless-stopped
+    environment:
+      - PASSWORD=pwd
+    ports:
+      - "8080:8787" #rstudio
+    volumes:
+      - ..:/home/rstudio
+    hostname: docker-rstudio
