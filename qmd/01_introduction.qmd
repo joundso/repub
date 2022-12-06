@@ -1,0 +1,8 @@
+# Introduction
+
+<!-- ## Background -->
+
+## What is reproducibility?
+
+_Reproducibility_ in this context means obtaining consistent results using the same input data, calculation steps, methods, and codes, and the same analysis conditions. This definition is synonymous with "computational reproducibility" and the terms are used interchangeably in this report. [@nationalacademiesofsciences2019]
+

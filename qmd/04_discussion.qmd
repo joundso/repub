@@ -1,0 +1,11 @@
+# Discussion
+
+Not everything that glitters is gold. What are the limits of the subject?
+What is still to be done?
+
+<!-- Press -> CTRL + Shift + C <- to (un)comment a line of code/text: -->
+<!-- This line should not (yet) appear in the manuscript. -->
+
+# Conclusions
+
+We are on a good path but not yet finished.
