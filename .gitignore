@@ -10,6 +10,7 @@
 !/_quarto.yml
 !/index.qmd
 !/repub.Rproj
+!/renovate.json
 # !/.RProfile
 
 
