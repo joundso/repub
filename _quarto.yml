@@ -27,11 +27,11 @@ bibliography: meta/references.bib
 csl: meta/ios-press-books.csl
 
 format:
-#  pdf:
-#   toc: true
-#   latex-engine: xelatex
  docx:
   toc: true
+ pdf:
+  toc: true
+  latex-engine: xelatex
 
 
 ## https://quarto.org/docs/reference/formats/opml.html#execution
