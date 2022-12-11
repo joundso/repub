@@ -1,15 +1,67 @@
-# Manuscript {.unnumbered}
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 
 ```{r}
-#| include: false
-
 library(magrittr)
+
+# download lua filters
+download.file(
+  url = "https://raw.githubusercontent.com/kapsner/lua-filters/affiliations_quarto_compatibility/author-info-blocks/author-info-blocks-quarto.lua",
+  destfile = "author-info-blocks-quarto.lua"
+)
+download.file(
+  url = "https://raw.githubusercontent.com/kapsner/lua-filters/affiliations_quarto_compatibility/scholarly-metadata/scholarly-metadata-quarto.lua",
+  destfile = "scholarly-metadata-quarto.lua"
+)
 ```
 
+\newpage
 
 {{< include qmd/00_abstract.qmd >}}
+\newpage
 {{< include qmd/01_introduction.qmd >}}
+\newpage
 {{< include qmd/02_methods.qmd >}}
+\newpage
 {{< include qmd/03_results.qmd >}}
+\newpage
 {{< include qmd/04_discussion.qmd >}}
+\newpage
 {{< include qmd/09_references.qmd >}}
+
+\newpage
+# Tables {.unnumbered}
+
+
+```{r}
+#| tbl-cap: "Data"
+#| label: tbl-data
+#| include: true
+#| column: body-outset
+#| echo: false
+#| warning: false
+iris |>
+  summary() |> 
+  knitr::kable()
+```
+
+\newpage
+# Figures {.unnumbered}
+
+```{r}
+#| layout-ncol: 2
+#| fig-cap: "Data plots."
+#| fig-subcap:
+#|   - "Sepal.Length vs. Sepal.Width."
+#|   - "Petal.Length vs. Petal.Width"
+#| out.width: "98%"
+#| label: fig-data
+#| include: true
+#| column: body-outset
+
+plot(iris$Sepal.Length, iris$Sepal.Width)
+plot(iris$Petal.Length, iris$Petal.Width)
+```

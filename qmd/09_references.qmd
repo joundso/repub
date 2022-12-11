@@ -1,8 +1,6 @@
 # References {.unnumbered}
 
-Quarto will include the references here. 
-The position of the reference-list can therefore be adjusted by moving the
-inclusion of this file within `index.qmd`.
+>Quarto will include the references here. The position of the reference-list can therefore be adjusted by moving the inclusion of this file within `index.qmd`.
 
 ::: {#refs}
 :::
