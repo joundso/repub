@@ -35,9 +35,15 @@ filters:
   - author-info-blocks-quarto.lua
 
 format:
-  docx: default
+  #docx: default
   pdf:
+    documentclass: article
     latex-engine: xelatex
+    geometry:
+      - left=25mm
+      - right=25mm
+      - top=25mm
+      - bottom=25mm
 
 
 # https://quarto.org/docs/reference/formats/opml.html#execution
