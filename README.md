@@ -5,6 +5,11 @@
 Loads of tutorials and literature about reproducible research is available but it turned out that there was no repository (that I know of) that reproducibly maps everything from the beginning (data analysis) to the end (publication). This repo is supposed to offer exactly that:
 It should be directly usable without customization, but also provide help to be able to adapt it to your own needs at necessary points.
 
+## Preparations
+
+1. Make sure, you have [Docker](https://docs.docker.com/get-docker/) installed
+2. Make sure, you have [Git](https://git-scm.com/downloads) installed
+
 ## How to use
 
 1. Clone this repository:
