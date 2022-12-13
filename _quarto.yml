@@ -23,7 +23,10 @@ book:
   chapters:
     - index.qmd
 
+## 
 bibliography: meta/references.bib
+
+## Citation styltes from here: 
 csl: meta/ios-press-books.csl
 
 format:
