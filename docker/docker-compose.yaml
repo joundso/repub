@@ -12,7 +12,7 @@ services:
     environment:
       - PASSWORD=pwd
     ports:
-      - "8080:8787" #rstudio
+      - 127.0.0.1:8080:8787   # RStudio
     volumes:
       - ..:/home/rstudio
     hostname: docker-rstudio
