@@ -1,48 +1,60 @@
 project:
-  type: book
+  type: default
   output-dir: docs
-
-book:
-  title: "Reproducible Publications"
-
-  # https://quarto.org/docs/journals/authors.html#author-metadata
-  author:
-    - name: Jonathan M. Mang
-      orcid: 0000-0003-0518-4710
-      corresponding: true
-      affiliations:
-        - id: diz
-          name: Medical Center for Information and Communication Technology, Universitätsklinikum Erlangen, Erlangen, Germany.
-    - name: Lorenz A. Kapsner
-      orcid: 0000-0003-1866-860X
-      affiliations:
-        - ref: diz
-        - id: dr
-          name: Institute of Radiology, Universitätsklinikum Erlangen, Friedrich-Alexander-University Erlangen-Nürnberg (FAU), Erlangen, Germany.
-
-  chapters:
+  execute-dir: project
+  render:
     - index.qmd
+output-file: Reproducible-Publications
+
+title: "Reproducible Publications"
+
+# https://quarto.org/docs/journals/authors.html#author-metadata
+author:
+  - John Doe:
+      affiliations: [jdct]
+      correspondence: true
+      email: john.doe@jdct.edu
+      orcid: 0000-1111-2222-3333
+  - Jane Roe:
+      affiliations: [jdct, iot]
+      orcid: 0000-2222-1111-3333
+
+affiliations:
+  - id: jdct
+    name: John Doe Center for Technology, John Doe University, Doetown, Germany.
+  - id: iot
+    name: Institute of Technology, John Doe University, Doetown, Germany.
 
 ## 
 bibliography: meta/references.bib
 
 ## Citation styltes from here: 
 csl: meta/ios-press-books.csl
+ 
+filters:
+  # watch https://github.com/pandoc/lua-filters/issues/226 for updates on
+  # quarto adjustments of these filters
+  - scholarly-metadata-quarto.lua
+  - author-info-blocks-quarto.lua
 
 format:
- docx:
-  toc: true
- pdf:
-  toc: true
-  latex-engine: xelatex
+  #docx: default
+  pdf:
+    documentclass: article
+    latex-engine: xelatex
+    geometry:
+      - left=25mm
+      - right=25mm
+      - top=25mm
+      - bottom=25mm
 
 
-## https://quarto.org/docs/reference/formats/opml.html#execution
+# https://quarto.org/docs/reference/formats/opml.html#execution
 execute:
+  include: false
   echo: false
   message: false
   warning: false
-  include: false
   error: true
 
 

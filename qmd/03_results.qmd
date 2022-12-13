@@ -1,3 +1,7 @@
 # Results
 
 Here it is: A template for reproducible research.
+
+@tbl-data shows a summary of the data.
+
+A dotplot of Sepal.Lentgh and Sepal.Width is shown in @fig-data.
