@@ -25,7 +25,7 @@ affiliations:
   - id: iot
     name: Institute of Technology, John Doe University, Doetown, Germany.
 
-## The literature goes here:
+## The literature file goes here (use e.g. 'Better Bib TeX for Zotero' to dynamically create this file):
 bibliography: meta/references.bib
 
 ## Citation styltes from here: https://github.com/citation-style-language/styles
