@@ -35,3 +35,13 @@ It should be directly usable without customization, but also provide help to be 
 ## Questions?
 
 - Bugs or Feature Requests: <https://github.com/joundso/repub/issues>
+
+## Details
+
+### Literature
+
+For the integration of the sources from the `references.bib` file in the continuous text, permanent citation keys are used.
+To dynamically create a `references.bib` file, the Zotero plugin `Better BibTeX for Zotero`[https://retorque.re/zotero-better-bibtex/] can be used.
+
+1. Install manual: <https://retorque.re/zotero-better-bibtex/installation/>
+2. Afterwards, the ['automatic export'](https://retorque.re/zotero-better-bibtex/installation/preferences/automatic-export/) function can be used to automatically create and update a `*.bib` file depending on the content in your Zotero instance.
