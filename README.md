@@ -49,7 +49,8 @@ To dynamically create a `references.bib` file, the Zotero plugin [`Better BibTeX
 4. If necessary, adapt the path to the `.bib` file in [`_quarto.yml`](./_quarto.yml):
 
     ```yaml
-    ## The literature file goes here (use e.g. 'Better Bib TeX for Zotero' to dynamically create this file):
+    ## The literature file goes here (use e.g. 
+    ## 'Better BibTeX for Zotero' to dynamically create this file):
     bibliography: meta/references.bib
     ```
 
@@ -62,3 +63,7 @@ Download the necessary style, store it locally and add the path to the `.csl` fi
 ## Citation styltes from here: https://github.com/citation-style-language/styles
 csl: meta/ios-press-books.csl
 ```
+
+### Outlook
+
+- Next to RStudio for R: Add Jupyter with Python backend to Docker deployment
