@@ -7,15 +7,15 @@ It should be directly usable without customization, but also provide help to be 
 
 ### Exemplary workflow
 
-Exemplary workflow to ensure reproducibility in data analysis and manuscript writing. The code for pre-processing, the analysis and the presentation of the results in the manuscript (`code`) are version-controlled. The build information of the container for the runtime and development environment (`Dockerfile + docker-compose`) is also version-controlled. The container image is version-controlled as well and stored in a dedicated online repository. The raw data itself is not version controlled via Git.
-
 ![Repdoducible Analysis including Docker](./data/img/repub_docker.drawio.png)
+
+Exemplary workflow to ensure reproducibility in data analysis and manuscript writing. The code for pre-processing, the analysis and the presentation of the results in the manuscript (`code`) are version-controlled. The build information of the container for the runtime and development environment (`Dockerfile + docker-compose`) is also version-controlled. The container image is version-controlled as well and stored in a dedicated online repository. The raw data itself is not version controlled via Git.
 
 ### RStudio with Quarto documents
 
-RStudio as integrated development environment for writing and compiling quarto documents with code (e.g. R or Python) and text (using Markdown or the visual editor). On the left: RStudio interface for composing the text and code next to each other. On the right: Rendered output document with dynamically incorporated results.
-
 ![Repdoducible Analysis in RStudio using Quarto](./data/img/demo_manuscript.png)
+
+RStudio as integrated development environment for writing and compiling quarto documents with code (e.g. R or Python) and text (using Markdown or the visual editor). On the left: RStudio interface for composing the text and code next to each other. On the right: Rendered output document with dynamically incorporated results.
 
 ## Preparations
 
