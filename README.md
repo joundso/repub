@@ -5,6 +5,18 @@
 Loads of tutorials and literature about reproducible research is available but it turned out that there was no repository (that I know of) that reproducibly maps everything from the beginning (data analysis) to the end (publication). This repo is supposed to offer exactly that:
 It should be directly usable without customization, but also provide help to be able to adapt it to your own needs at necessary points.
 
+### Exemplary workflow
+
+Exemplary workflow to ensure reproducibility in data analysis and manuscript writing. The code for pre-processing, the analysis and the presentation of the results in the manuscript (`code`) are version-controlled. The build information of the container for the runtime and development environment (`Dockerfile + docker-compose`) is also version-controlled. The container image is version-controlled as well and stored in a dedicated online repository. The raw data itself is not version controlled via Git.
+
+![Repdoducible Analysis including Docker](./data/img/repub_docker.drawio.png)
+
+### RStudio with Quarto documents
+
+RStudio as integrated development environment for writing and compiling quarto documents with code (e.g. R or Python) and text (using Markdown or the visual editor). On the left: RStudio interface for composing the text and code next to each other. On the right: Rendered output document with dynamically incorporated results.
+
+![Repdoducible Analysis in RStudio using Quarto](./data/img/demo_manuscript.png)
+
 ## Preparations
 
 1. Make sure, you have [Docker](https://docs.docker.com/get-docker/) installed
