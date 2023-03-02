@@ -15,9 +15,10 @@ FROM rocker/rstudio:4.2.2
 # ENV PATH=$PATH:/usr/local/texlive/bin/linux
 # RUN /rocker_scripts/install_verse.sh
 # RUN /rocker_scripts/install_texlive.sh
-RUN quarto install tool tinytex
-RUN tlmgr path add
-# RUN R -q -e "tinytex::install_tinytex()"
+# RUN quarto install tool tinytex
+RUN quarto install tinytex --update-path
+# RUN tlmgr path add
+# RUN R -q -e "tinytex::install_tinytex(add_path = TRUE, force = TRUE)"
 
 
 ## Install some system libraries we need
