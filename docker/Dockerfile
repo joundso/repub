@@ -1,4 +1,4 @@
-FROM rocker/rstudio:4.2.2
+FROM rocker/rstudio:4.2.3
 
 ## In all rocker-images there is this magic folder with lots of predefined scripts for installing stuff
 ## like `shiny`, `quarto`, `python` including all necessarry system libraries:
