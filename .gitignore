@@ -27,7 +27,7 @@
 /data/*
 !/data/data1.csv
 !/data/img/
-!/data/img/*
+/data/img/*
 !/data/img/demo_manuscript.png
 !/data/img/repub_docker.drawio.png
 
