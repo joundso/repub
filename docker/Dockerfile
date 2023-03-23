@@ -1,4 +1,4 @@
-FROM rocker/rstudio:4.2.2
+FROM rocker/rstudio:4.2.3
 
 ## In all rocker-images there is this magic folder with lots of predefined scripts for installing stuff
 ## like `shiny`, `quarto`, `python` including all necessarry system libraries:
@@ -15,10 +15,9 @@ FROM rocker/rstudio:4.2.2
 # ENV PATH=$PATH:/usr/local/texlive/bin/linux
 # RUN /rocker_scripts/install_verse.sh
 # RUN /rocker_scripts/install_texlive.sh
-# RUN quarto install tool tinytex
 RUN quarto install tinytex --update-path
-# RUN tlmgr path add
-# RUN R -q -e "tinytex::install_tinytex(add_path = TRUE, force = TRUE)"
+RUN tlmgr path add
+# RUN R -q -e "tinytex::install_tinytex()"
 
 
 ## Install some system libraries we need
