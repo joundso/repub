@@ -11,6 +11,8 @@
 !/index.qmd
 !/repub.Rproj
 !/renovate.json
+!/start.sh
+!/stop.sh
 # !/.RProfile
 
 

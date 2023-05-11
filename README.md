@@ -34,8 +34,11 @@ RStudio as integrated development environment for writing and compiling quarto d
 2. Start the containerized RStudio:
 
     ```bash
-    cd docker
-    docker-compose up -d
+    bash ./start.sh
+    
+    ## or:
+    # cd docker
+    # docker-compose up -d
     ```
 
 3. Open RStudio in your browser at [`http://127.0.0.1:8080/`](http://127.0.0.1:8080/)
