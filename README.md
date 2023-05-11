@@ -31,7 +31,7 @@ RStudio as integrated development environment for writing and compiling quarto d
     cd repub
     ```
 
-2. Start the containerized RStudio by running `bash [./start.sh](./start.sh)`, or by running:
+2. Start the containerized RStudio by running [`start.sh`](./start.sh), or by running:
 
     ```bash
     cd docker
