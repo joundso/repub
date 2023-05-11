@@ -31,14 +31,11 @@ RStudio as integrated development environment for writing and compiling quarto d
     cd repub
     ```
 
-2. Start the containerized RStudio:
+2. Start the containerized RStudio by running `bash [./start.sh](./start.sh)`, or by running:
 
     ```bash
-    bash ./start.sh
-    
-    ## or:
-    # cd docker
-    # docker-compose up -d
+    cd docker
+    docker-compose up -d
     ```
 
 3. Open RStudio in your browser at [`http://127.0.0.1:8080/`](http://127.0.0.1:8080/)
