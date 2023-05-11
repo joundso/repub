@@ -43,7 +43,7 @@ docker build \
     --progress=plain \
     --no-cache=${docker_build_no_cache} \
     --label "org.label-schema.name=$REGISTRY_PREFIX/$IMAGE_NAME" \
-    --label "org.label-schema.vsc-url=https://github.com/palmjulia/R-Tutorial/blob/main/docker/Dockerfile" \
+    --label "org.label-schema.vsc-url=https://github.com/joundso/repub" \
     --label "org.label-schema.vcs-ref=$(git rev-parse HEAD)" \
     --label "org.label-schema.version=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" \
     -f ./Dockerfile \

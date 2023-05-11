@@ -41,7 +41,6 @@ format:
   #docx: default
   pdf:
     documentclass: article
-    latex-engine: xelatex
     geometry:
       - left=25mm
       - right=25mm

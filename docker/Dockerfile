@@ -1,25 +1,17 @@
-FROM rocker/rstudio:4.3.0
+FROM rocker/verse:4.3.0
 
 ## In all rocker-images there is this magic folder with lots of predefined scripts for installing stuff
 ## like `shiny`, `quarto`, `python` including all necessarry system libraries:
 ## https://github.com/rocker-org/rocker-versioned2/tree/master/scripts
-
-## In rstudio, this is already installed:
-## (Source: https://github.com/rocker-org/rocker-versioned2/blob/master/dockerfiles/rstudio_4.2.2.Dockerfile)
-## - pandoc
-## - quarto
-
-
-## Install LaTeX:
-# ENV CTAN_REPO=https://mirror.ctan.org/systems/texlive/tlnet
-# ENV PATH=$PATH:/usr/local/texlive/bin/linux
-# RUN /rocker_scripts/install_verse.sh
-# RUN /rocker_scripts/install_texlive.sh
-RUN quarto install tool tinytex
-RUN tlmgr path add
-# RUN R -q -e "tinytex::install_tinytex()"
+## So to get an image with RStudio, Quarto, TeX and some publishing stuff, we need to combine:
+## - RStudio image (including Quarto)
+## - (tidy)verse (including TeX and publishing packages like `bookdown`)
+## --> rbase --> rstudio --> tidyverse --> verse
 
 
+## #################################
+## ----- Custom stuff for our needs: -----
+## #################################
 ## Install some system libraries we need
 RUN apt-get update && apt-get install -y --no-install-recommends \
     # ca-certificates important for curl from https:
@@ -49,3 +41,4 @@ RUN install2.r --error \
     ## Clear caches:
     && rm -rf /tmp/downloaded_packages \
     && rm -rf /var/lib/apt/lists/*
+
