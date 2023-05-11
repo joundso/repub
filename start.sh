@@ -2,6 +2,7 @@
 set -e 
 set -o pipefail
 
+## Stop currently running container and clean up:
 bash ./stop.sh
 
 ## Remove stuff from last container runtime:

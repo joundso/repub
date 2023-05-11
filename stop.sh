@@ -2,8 +2,10 @@
 set -e 
 set -o pipefail
 
-## Stop the new container:
+## Stop running containers:
 cd ./docker
 docker-compose down
-docker system prune -f
 cd ..
+
+## Clean up:
+docker system prune -f
