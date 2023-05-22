@@ -1,5 +1,7 @@
 # Reproducible Publishing using Quarto
 
+[![](https://img.shields.io/badge/doi-10.3233/SHTI230064--z-yellow.svg)](https://doi.org/10.3233/SHTI230064)
+
 ## Motivation
 
 Loads of tutorials and literature about reproducible research is available but it turned out that there was no repository (that I know of) that reproducibly maps everything from the beginning (data analysis) to the end (publication). This repo is supposed to offer exactly that:
@@ -16,6 +18,10 @@ Exemplary workflow to ensure reproducibility in data analysis and manuscript wri
 ![Repdoducible Analysis in RStudio using Quarto](./data/img/demo_manuscript.png)
 
 RStudio as integrated development environment for writing and compiling quarto documents with code (e.g. R or Python) and text (using Markdown or the visual editor). On the left: RStudio interface for composing the text and code next to each other. On the right: Rendered output document with dynamically incorporated results.
+
+## Furhter readings
+
+Interested in more information? [Find the full paper about this project here](https://ebooks.iospress.nl/doi/10.3233/SHTI230064).
 
 ## Preparations
 
