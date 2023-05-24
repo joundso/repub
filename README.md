@@ -16,6 +16,7 @@ Exemplary workflow to ensure reproducibility in data analysis and manuscript wri
 ### RStudio with Quarto documents
 
 ![Repdoducible Analysis in RStudio using Quarto](./data/img/demo_manuscript.png)
+![Data process to the final manuscript in Quarto](./data/img/repub_process.png)
 
 RStudio as integrated development environment for writing and compiling quarto documents with code (e.g. R or Python) and text (using Markdown or the visual editor). On the left: RStudio interface for composing the text and code next to each other. On the right: Rendered output document with dynamically incorporated results.
 

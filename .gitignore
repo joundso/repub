@@ -32,6 +32,7 @@
 /data/img/*
 !/data/img/demo_manuscript.png
 !/data/img/repub_docker.drawio.png
+!/data/img/repub_process.png
 
 !/docker/
 /docker/*
