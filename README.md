@@ -23,7 +23,7 @@ RStudio as integrated development environment for writing and compiling quarto d
 
 The text and code are evaluated on the basis of the data provided, resulting in a dynamically generated manuscript in the form of a Word, PDF or HTML document.
 
-## Furhter readings
+## Further readings
 
 Interested in more information? [Find the full paper about this project here](https://ebooks.iospress.nl/doi/10.3233/SHTI230064).
 
