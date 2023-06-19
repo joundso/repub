@@ -26,7 +26,7 @@ jobs:
       - name: Import environment variables from a file
         id: import-env
         shell: bash
-        run: cat ${{ env.ENV_FILE }} >> $GITHUB_ENV
+        run: cat ./docker/.env >> $GITHUB_ENV
       -
         name: Build and push
         uses: docker/build-push-action@v4
