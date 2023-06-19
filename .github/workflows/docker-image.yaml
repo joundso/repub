@@ -23,10 +23,14 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       
-      - name: Import environment variables from a file
-        id: import-env
-        shell: bash
-        run: cat ./docker/.env >> $GITHUB_ENV
+      - uses: actions/checkout@v3
+      - run: |
+          cat ./docker/.env >> $GITHUB_ENV
+      
+      # - name: Import environment variables from a file
+      #   id: import-env
+      #   shell: bash
+      #   run: cat ./docker/.env >> $GITHUB_ENV
       -
         name: Build and push
         uses: docker/build-push-action@v4
