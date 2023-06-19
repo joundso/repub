@@ -1,6 +1,7 @@
 # Reproducible Publishing using Quarto
 
-[![](https://img.shields.io/badge/doi-10.3233/SHTI230064--z-yellow.svg)](https://doi.org/10.3233/SHTI230064)
+[![Publication](https://img.shields.io/badge/doi-10.3233/SHTI230064--z-yellow.svg)](https://doi.org/10.3233/SHTI230064)
+[![Docker image workflow](https://github.com/joundso/repub/actions/workflows/ci_build_push_image.yaml/badge.svg)](https://hub.docker.com/repository/docker/joundso/rstudio-verse/general)
 
 ## Motivation
 

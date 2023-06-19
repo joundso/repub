@@ -1,3 +1,4 @@
+## The name will be the text in the badge:
 name: Docker Image CI
 
 on:
