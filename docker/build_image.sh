@@ -28,14 +28,14 @@ printf "Building images with version tag $VERSION_TAG"
 printf "\n##################################\n"
 
 printf "\n\nPlease insert your login credentials to registry: $REGISTRY_PREFIX ...\n"
-docker login
+# docker login
 
 printf "\n\n##################################\n"
 printf "$IMAGE_NAME"
 printf "\n##################################\n"
 printf "\nPulling cached $IMAGE_NAME image\n"
 # pull latest image for caching:
-docker pull $REGISTRY_PREFIX/$IMAGE_NAME
+docker pull ${REGISTRY_PREFIX}/${IMAGE_NAME}
 # build new image (latest):
 printf "\n\nBuilding $REGISTRY_PREFIX/$IMAGE_NAME image (latest):\n"
 
