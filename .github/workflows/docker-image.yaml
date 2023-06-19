@@ -27,14 +27,10 @@ jobs:
       - run: |
           cat ./docker/.env >> $GITHUB_ENV
       
-      # - name: Import environment variables from a file
-      #   id: import-env
-      #   shell: bash
-      #   run: cat ./docker/.env >> $GITHUB_ENV
       -
         name: Build and push
         uses: docker/build-push-action@v4
         with:
           context: "{{defaultContext}}:docker"
           push: true
-          tags: ${{ env.REGISTRY_PREFIX }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_VERSION_TAG }}
+          tags: "${{ env.REGISTRY_PREFIX }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_VERSION_TAG }}"
