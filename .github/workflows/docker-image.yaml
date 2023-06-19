@@ -33,4 +33,4 @@ jobs:
         with:
           context: "{{defaultContext}}:docker"
           push: true
-          tags: "${{ env.REGISTRY_PREFIX }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_VERSION_TAG }}"
+          tags: joundso/rstudio-verse:4.3.1
