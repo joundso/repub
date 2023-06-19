@@ -24,6 +24,9 @@
 !/.github/
 /.github/*
 !/.github/dependabot.yml
+!/.github/workflows/
+/.github/workflows/*
+!/.github/workflows/docker-image.yaml
 
 !/data/
 /data/*
