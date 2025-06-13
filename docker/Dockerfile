@@ -1,4 +1,4 @@
-FROM rocker/verse:4.5.0
+FROM rocker/verse:4.5.1
 
 ## In all rocker-images there is this magic folder with lots of predefined scripts for installing stuff
 ## like `shiny`, `quarto`, `python` including all necessarry system libraries:
